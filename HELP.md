@@ -1,5 +1,5 @@
-./mvnv package
-<!-- ./mvnv spring-boot:run -->
+./mvnw package
+
 
 docker login --username=khawarhere --email=khawarhere@gmail.com
 
