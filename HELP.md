@@ -1,10 +1,9 @@
 ./mvnw package
 
+docker login --username=khawarhere
 
-docker login --username=khawarhere --email=khawarhere@gmail.com
+docker build -t apptwo .
 
-docker build -t appone .
+docker tag apptwo inserito/apptwo:2
 
-docker tag appone inserito/appone
-
-docker push inserito/appone
+docker push inserito/apptwo:2
